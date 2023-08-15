@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background:url(https://img.freepik.com/free-vector/pastel-blue-banner-background_1048-11857.jpg?w=2000);
+    background-size: cover;
+
+}
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.box{
+    min-width: 400px;
+    background-color: whitesmoke;
+    border-radius: 38px;
+    text-align: center;
+    position: relative;
+}
+
+.box::before{
+    content: '';
+    position: absolute;
+    height: 110%;
+    width: 110%;
+    left: -5%;
+    top: -5%;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 166px -31px rgb(97, 95, 95);
+    border-radius: 60px;
+    z-index: -1;
+}
+h1{
+    font-weight: bold;
+    font-size: 36px;
+    padding: 30px 0;
+}
+
+.content{
+    padding: 0 40px;
+}
+
+.input{
+    background-color: white;
+    /* box-shadow: 0px 0px 95px -30px black; */
+    border-radius: 28px;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.input label{
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 20px;
+}
+.input input{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(117, 117, 248);
+    width: 60%;
+    text-align: center;
+    font-size: 28px;
+}
+button#calculate{
+    color: white;
+    background-color: rgb(117, 117, 248);
+    font-size: 16px;
+    border-radius: 12px;
+    padding: 12px 0;
+    width: 100%;
+    outline: none;
+    border: none;
+    transition: background .2s ease;
+}
+button#calculate:hover{
+   background: blue;
+}
+.result{
+    padding: 30px 20px;
+}
+.result p{
+    font-weight: 600;
+    font-size: 22px;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.result #result{
+    font-size: 30px;
+    font-weight: 900;
+    color: rgb(117, 117, 248);
+    background: rgb(232, 231, 231);
+    display: inline-block;
+    padding: 7px 20px;
+    border-radius: 55px;
+    margin-bottom: 25px;
+}
+
+#comment{
+    color: rgb(117, 117, 248);
+    font-weight: 800;
+}
